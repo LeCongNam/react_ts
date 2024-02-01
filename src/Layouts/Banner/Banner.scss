@@ -1,0 +1,113 @@
+.banner_wrapper{
+
+  & .banner{
+    display: flex;
+    width: 1440px;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 20px;
+
+    & .left {
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+
+      & .one_more_paragraph{
+        color: #002A48;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 68px;
+        text-transform: capitalize;
+      }
+
+      & .thousand{
+        color: #002A48;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 60px;
+        text-transform: capitalize;
+      }
+
+      & p{
+        margin-top: 24px;
+        text-align: justify;
+        width: 480px;
+      }
+
+      & .btn__wrapper{
+        margin-top: 34px;
+        display: flex;
+        gap: 20px;
+
+
+        & .btn__play{
+          display: flex;
+          align-items: center;
+          color: #003459;
+          background-color: transparent;
+          border:  1px  #003459 solid;
+          outline: none;
+          font-weight: 700;
+          padding: 12px 28px 12px;
+          cursor: pointer;
+          flex-grow: 0;
+          flex-shrink: 0;
+          border-radius: 57px;
+
+          & img{
+            width: 24px;
+            height: 24px;
+            margin-left: 4px;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 1px solid #003459 ;
+          }
+
+          &:hover{
+            color: #FDFDFD;
+            background-color: #003459;
+            border: none;
+          }
+          &:hover > img{
+            background-color: #ffffff;
+            border-radius: 50%;
+          }
+        }
+
+        & .btn__explore{
+          color: #FDFDFD;
+          background-color: #003459;
+          border: none;
+          display: flex;
+          align-items: center;
+          outline: none;
+          font-weight: 700;
+          padding: 12px 28px 12px;
+          cursor: pointer;
+          flex-grow: 0;
+          flex-shrink: 0;
+          border-radius: 57px;
+
+          & img{
+            width: 24px;
+            height: 24px;
+          }
+
+          &:hover{
+            color: #003459;
+            background-color: transparent;
+            border:  1px  #003459 solid;
+          }
+        }
+        }
+    }
+
+    & .right {
+      flex: 3;
+      display: flex;
+      & .banner__img{
+        width: 768px;
+      }
+    }
+  }
+}
